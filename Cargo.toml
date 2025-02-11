@@ -1,0 +1,9 @@
+[package]
+name = "adflib-cli"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+adflib = "0.1.6"
+chrono = "0.4.39"
+clap = "4.5.28"
