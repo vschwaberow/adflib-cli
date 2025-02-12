@@ -8,7 +8,7 @@ homepage = "https://github.com/vschwaberow/adflib-cli"
 repository = "https://github.com/vschwaberow/adflib-cli"
 license = "MIT"
 readme = "README.md"
-keywords = ["amiga", "adf", "dms", "disk", "toolkit", "cli"]
+keywords = ["amiga", "adf", "disk", "toolkit", "cli"]
 categories = ["command-line-utilities"]
 documentation = "https://docs.rs/adflib-cli"
 
