@@ -1,9 +1,29 @@
 [package]
 name = "adflib-cli"
 version = "0.1.0"
+authors = ["Volker Schwaberow <volker@schwaberow.de>"]
 edition = "2021"
+description = "The Command Line Toolkit for managing ADF disk images with extended features."
+homepage = "https://github.com/vschwaberow/adflib-cli"
+repository = "https://github.com/vschwaberow/adflib-cli"
+license = "MIT"
+readme = "README.md"
+keywords = ["amiga", "adf", "dms", "disk", "toolkit", "cli"]
+categories = ["command-line-utilities"]
+documentation = "https://docs.rs/adflib-cli"
+
+[profile.release]
+opt-level = 3
+debug = false
+lto = true
+codegen-units = 1
+panic = "abort"
+
+[profile.dev]
+opt-level = 0
+debug = true
 
 [dependencies]
 adflib = "0.1.6"
 chrono = "0.4.39"
-clap = "4.5.28"
+clap = { version = "4.5.28", features = ["derive"] }
